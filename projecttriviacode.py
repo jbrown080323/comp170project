@@ -11,7 +11,7 @@
 ######## if player_amount = 1:
 ### def create_question(self):
 ###### questions =[]
-######with open
+######with open file 'popculturequestions' as file:
 ###### q
 ### def give_answer(self):
 ###### intialized answer as input "Enter Answer: "
