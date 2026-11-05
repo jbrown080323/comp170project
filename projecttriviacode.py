@@ -14,6 +14,6 @@
 ######with open file 'popculturequestions' as file:
 ###### q
 ### def give_answer(self):
-###### intialized answer as input "Enter Answer: "
+###### intialize answer as input "Enter Answer: "
 ###### if answer is not equal to question:
 ####### raise ValueError "Wrong! The answer is {answer} "
