@@ -4,13 +4,14 @@
 ###### self.question = question
 ###### self.answer = answer
 ###### self.score = score
-### def  menu(self):
+### def menu(self):
 ### def player_numb(self, player_amount):
 ##### intialize player_amount as integer input "How many players will be playing"
 ###### while player_amount does not equal 0
 ######## if player_amount = 1:
 ### def create_question(self):
-###### question
+###### questions =[]
+######with open
 ###### q
 ### def give_answer(self):
 ###### intialized answer as input "Enter Answer: "
