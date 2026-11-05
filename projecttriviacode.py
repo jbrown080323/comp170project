@@ -5,6 +5,7 @@
 ###### self.answer = answer
 ###### self.score = score
 ### def menu(self):
+##### while 
 ### def player_numb(self, player_amount):
 ##### intialize player_amount as integer input "How many players will be playing"
 ###### while player_amount does not equal 0
@@ -12,7 +13,7 @@
 ### def create_question(self):
 ###### questions =[]
 ######with open file 'popculturequestions' as file:
-###### q
+###### if 'Easy Mode' = True
 ### def give_answer(self):
 ###### intialize answer as input "Enter Answer: "
 ###### if answer is not equal to question:
