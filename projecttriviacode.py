@@ -24,6 +24,8 @@
 ######with open file 'popculturequestions' as file:
 ###### for i in file:
 ############print(i)
+### def next_q(self):
+######
 ### def give_answer(self):
 ###### intialize answer as input "Enter Answer: "
 ###### if answer is not equal to question:
@@ -50,12 +52,14 @@ class Trivia:
                      self.player += player_amount
                      print(play_name)
     
-    def create_question(self,questions): # handles the creation and storage of each questions
+    def create_question(self,questions): # handles the creation and storage of each question
         questions = []
         with open('easymodeqs.py') as file:
             emrip = file.strip('\n')
             for i in file:
                 questions.append(i)
+    def next_q(self):
+        
     
     def give_answer(self, i_answer,c_answer,score): # handles the organization of each answer corrilated to its question
         self.score += score
