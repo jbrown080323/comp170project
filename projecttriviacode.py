@@ -42,7 +42,8 @@ class Trivia:
         self.question_amount = question_amount
     def player_numb(self, player_amount = 0):
             player_amount = int(input("How many player will be playing?: "))
-            multi_play = player_amount > 1 and player_amount < 5
+            self.name = player_amount
+            multi_play = self.name > 1 and self.name < 5
             while multi_play == False :
                 play_name = input("Enter player name")
                 if self.player == 1:
@@ -59,13 +60,14 @@ class Trivia:
             for i in file:
                 questions.append(i)
     def next_q(self):
+        k
         
     
     def give_answer(self, i_answer,c_answer,score): # handles the organization of each answer corrilated to its question
         self.score += score
         i_answer = input("Enter Your Answer: ")
         if i_answer == c_answer:
-            print("Correct!," play_name,"You earned a point")
+            print("Correct!,", play_name,"You earned a point")
             self.score += score
         else: 
             return "Incorrect!"
