@@ -40,6 +40,7 @@ class Trivia:
         self.score = score
         self.qnumb = 0
         self.question_amount = question_amount
+    
     def player_numb(self, player_amount = 0):
             player_amount = int(input("How many player will be playing?: "))
             self.name = player_amount
