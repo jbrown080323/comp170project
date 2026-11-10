@@ -51,18 +51,20 @@ class Trivia:
                      print(play_name)
     
     def create_question(self,questions): # handles the creation and storage of each questions
-        questions =[]
+        questions = []
         with open('easymodeqs.py') as file:
-
+            emrip = file.strip('\n')
             for i in file:
                 questions.append(i)
     
-    def give_answer(self, answer): # handles the organization of each answer corrilated to its question
-        score = 0
-        answer = input("Enter Your Answer: ")
-        i_answer = answer.lower()
-
-        if i_answer == answer
+    def give_answer(self, i_answer,c_answer,score): # handles the organization of each answer corrilated to its question
+        self.score += score
+        i_answer = input("Enter Your Answer: ")
+        if i_answer == c_answer:
+            print("Correct!," play_name,"You earned a point")
+            self.score += score
+        else: 
+            return "Incorrect!"
         # while answer!= "quit":
         #     try:
         #         self.answer = input("Enter Your Answer: ")
@@ -72,7 +74,7 @@ class Trivia:
         #     except ValueError:
         #         print("Wrong! The answer is ", answer)
     def next_question(self):
-        if self.question > len(self.question_amount):
+        if self.qnumb > len(self.question_amount):
             return self.question
 
 
