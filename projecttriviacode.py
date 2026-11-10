@@ -59,8 +59,6 @@ class Trivia:
             emrip = file.strip('\n')
             for i in file:
                 questions.append(i)
-    def next_q(self):
-        k
         
     
     def give_answer(self, i_answer,c_answer,score): # handles the organization of each answer corrilated to its question
