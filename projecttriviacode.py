@@ -34,7 +34,7 @@
 ##### if self.question is less than the length of self.questions_amount
 ####### return self.question
 class Trivia:
-    def ___init___(self, question,answer,score = 0, question_amount = 0):
+    def ___init___(self, question = [],answer = [],score = 0, question_amount = 0):
         self.question = question
         self.answer = answer
         self.score = score
@@ -56,13 +56,25 @@ class Trivia:
     
     def create_question(self,questions): # handles the creation and storage of each question
         questions = []
+        IsEasy =
+        IsMedi =
+        IsHard =
         with open('easymodeqs.py') as file:
             emrip = file.strip('\n')
             for i in file:
                 questions.append(i)
+        with open('mediummodeqs.py') as file:
+                    emrip = file.strip('\n')
+                    for i in file:
+                        questions.append(i)
+        with open('hardmodeqs.py') as file:
+                    emrip = file.strip('\n')
+                    for i in file:
+                        questions.append(i)
         
     
     def give_answer(self, i_answer,c_answer,score): # handles the organization of each answer corrilated to its question
+        answers = []
         self.score += score
         i_answer = input("Enter Your Answer: ")
         if i_answer == c_answer:
